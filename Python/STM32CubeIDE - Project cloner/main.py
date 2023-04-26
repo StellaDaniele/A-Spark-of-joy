@@ -158,7 +158,6 @@ if __name__ == "__main__":
     parser.add_argument('--root', type=str, required=False, help="Projects folder. If not specified, the root folder will be the current directory")
     args = parser.parse_args()
     root = args.root if args.root != None else dirname(realpath(__file__))
-    root = "C:\\Users\\sassi\\Documents\\Universita\\Terzo anno\\Tesi e Tirocinio\\spark_sdk_v1.1.0\\app\\example"
 
     menu = ConsoleMenu("STM32CubeIDE - Project cloner", prologue_text="List of cloneable projects:")
 
